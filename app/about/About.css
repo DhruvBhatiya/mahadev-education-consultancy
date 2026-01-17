@@ -1,0 +1,235 @@
+.about-page {
+  padding-top: 70px;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+  color: var(--white);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+.page-subtitle {
+  font-size: 1.5rem;
+  color: var(--orange);
+  font-weight: 600;
+}
+
+.about-content {
+  background: var(--white);
+}
+
+.about-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.about-text strong {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.placeholder-icon {
+  font-size: 8rem;
+}
+
+.values-section {
+  background: var(--light-gray);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.value-card {
+  background: var(--white);
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.value-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+}
+
+.value-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.team-section {
+  background: var(--white);
+}
+
+.team-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team-member {
+  background: var(--light-gray);
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.member-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--orange), var(--light-orange));
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 0 auto 25px;
+}
+
+.team-member h3 {
+  font-size: 1.8rem;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+.member-role {
+  font-size: 1.2rem;
+  color: var(--orange);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.member-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+}
+
+.branches-section {
+  background: var(--light-gray);
+}
+
+.branches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.branch-card {
+  background: var(--white);
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.branch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.branch-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.branch-card h3 {
+  font-size: 1.3rem;
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+@media (max-width: 968px) {
+  .about-main {
+    grid-template-columns: 1fr;
+  }
+
+  .image-placeholder {
+    max-width: 100%;
+    height: 300px;
+  }
+
+  .placeholder-icon {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .values-grid,
+  .branches-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,375 @@
+.home-page {
+  padding-top: 70px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+  color: var(--white);
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+  opacity: 0.3;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.trust-badge {
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+.trust-diamond {
+  background: var(--primary-blue);
+  border: 3px dashed var(--white);
+  padding: 20px;
+  transform: rotate(45deg);
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.trust-diamond > * {
+  transform: rotate(-45deg);
+  text-align: center;
+}
+
+.trust-text {
+  font-size: 0.7rem;
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.trust-number {
+  font-size: 2.5rem;
+  color: var(--orange);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.trust-years {
+  font-size: 0.8rem;
+  color: var(--white);
+  background: var(--orange);
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-title-orange {
+  color: var(--orange);
+  display: block;
+}
+
+.hero-title-blue {
+  color: var(--white);
+  display: block;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 10px;
+}
+
+.hero-highlight {
+  font-size: 2.5rem;
+  color: var(--orange);
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-graphic {
+  position: relative;
+}
+
+.airplane-icon {
+  font-size: 150px;
+  animation: fly 3s ease-in-out infinite;
+}
+
+@keyframes fly {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(20px) translateY(-20px);
+  }
+}
+
+/* Services Preview */
+.services-preview {
+  background-color: var(--light-gray);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.service-card {
+  background: var(--white);
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Countries Section */
+.countries-section {
+  background: var(--white);
+}
+
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.country-card {
+  background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+  color: var(--white);
+  padding: 40px 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 20px rgba(11, 43, 74, 0.2);
+}
+
+.country-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(11, 43, 74, 0.3);
+}
+
+.country-flag {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.country-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--orange);
+}
+
+.country-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Why Choose Us */
+.why-choose {
+  background: var(--light-gray);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 30px;
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-number {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--orange);
+  margin-bottom: 15px;
+}
+
+.feature-item h3 {
+  font-size: 1.3rem;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  color: var(--text-light);
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--orange), var(--light-orange));
+  color: var(--white);
+  padding: 80px 20px;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.cta-content .btn {
+  background-color: var(--white);
+  color: var(--orange);
+  font-size: 1.1rem;
+  padding: 15px 40px;
+}
+
+.cta-content .btn:hover {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+@media (max-width: 968px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .trust-badge {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-highlight {
+    font-size: 2rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .airplane-icon {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px;
+    min-height: auto;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-highlight {
+    font-size: 1.5rem;
+  }
+
+  .services-grid,
+  .countries-grid,
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+}

@@ -7,13 +7,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <div className="trust-badge">
+          {/* <div className="trust-badge">
             <div className="trust-diamond">
               <span className="trust-text">TRUST OF</span>
               <span className="trust-number">6</span>
               <span className="trust-years">YEARS</span>
             </div>
-          </div>
+          </div> */}
           <h1 className="hero-title">
             <span className="hero-title-orange">WANT TO</span>
             <span className="hero-title-blue"> STUDY ABROAD ?</span>

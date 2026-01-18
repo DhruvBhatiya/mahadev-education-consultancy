@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import './Navbar.css'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,11 +21,17 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <Link href="/" className="nav-logo">
-          <div className="logo-icon">M</div>
+         <Image
+      src="/images/logo.png"
+      alt="Dhruv Tech Logo"
+      width={200}
+      height={80}
+    />
+          {/* <div className="logo-icon">M</div>
           <div className="logo-text">
             <span className="logo-name">Mahadev</span>
             <span className="logo-tagline">EDUCATION CONSULTANCY</span>
-          </div>
+          </div> */}
         </Link>
 
         <button 

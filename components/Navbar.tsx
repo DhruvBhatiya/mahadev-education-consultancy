@@ -2,12 +2,14 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import './Navbar.css'
 import Image from 'next/image'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,10 +47,10 @@ export default function Navbar() {
         </button>
 
         <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
-          <li><Link href="/" onClick={() => setIsOpen(false)}>Home</Link></li>
-          <li><Link href="/about" onClick={() => setIsOpen(false)}>About</Link></li>
-          <li><Link href="/services" onClick={() => setIsOpen(false)}>Services</Link></li>
-          <li><Link href="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+          <li><Link href="/" onClick={() => setIsOpen(false)} className={pathname === '/' ? 'active' : ''}>Home</Link></li>
+          <li><Link href="/about" onClick={() => setIsOpen(false)} className={pathname === '/about' ? 'active' : ''}>About</Link></li>
+          <li><Link href="/services" onClick={() => setIsOpen(false)} className={pathname === '/services' ? 'active' : ''}>Services</Link></li>
+          <li><Link href="/contact" onClick={() => setIsOpen(false)} className={pathname === '/contact' ? 'active' : ''}>Contact</Link></li>
         </ul>
       </div>
     </nav>

@@ -96,6 +96,14 @@
   width: 100%;
 }
 
+.nav-menu li a.active {
+  color: var(--orange);
+}
+
+.nav-menu li a.active::after {
+  width: 100%;
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;

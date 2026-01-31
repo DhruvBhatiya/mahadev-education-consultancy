@@ -99,7 +99,7 @@ export default function Contact() {
                 <div className="address-cards-wrapper">
                   <div className="info-card">
                     <div className="info-icon">📍</div>
-                    <h3>Address 1</h3>
+                    <h3>Office 1</h3>
                     <p>B-109, Joyos Hubtown,</p>
                     <p>Modhera Circle,</p>
                     <p>Mehsana - 384001</p>
@@ -107,7 +107,7 @@ export default function Contact() {
 
                   <div className="info-card">
                     <div className="info-icon">📍</div>
-                    <h3>Address 2</h3>
+                    <h3>Office 2</h3>
                     <p>810, Satyamev Eminence</p>
                     <p>B/S. Saptak Bungalows</p>
                     <p>Science City Road, Sola</p>

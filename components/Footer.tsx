@@ -34,6 +34,7 @@ export default function Footer() {
             <h4>Contact Info</h4>
             <p>Office: 76000 92449 | 70414 15851</p>
             <p>Dhruval Brahmbhatt: 8490892700</p>
+            <p>Gunjan Brahmbhatt: 9898968745</p>
             <p>B-109, Joyos Hubtown, Modhera Circle</p>
           </div>
         </div>

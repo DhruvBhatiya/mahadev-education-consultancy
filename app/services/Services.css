@@ -26,6 +26,10 @@
   background: var(--white);
 }
 
+.education-services {
+  background: var(--light-gray);
+}
+
 .visa-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));

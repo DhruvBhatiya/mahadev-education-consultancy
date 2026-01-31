@@ -70,6 +70,33 @@ export default function Services() {
         </div>
       </section>
 
+      <section className="education-services section">
+        <div className="container">
+          <h2 className="section-title">Educational Services</h2>
+          <p className="section-subtitle">Helping students achieve their academic goals</p>
+          <div className="visa-grid">
+            <div className="visa-card">
+              <div className="visa-icon">📚</div>
+              <h3>NIOS - HSC/SSC</h3>
+              <p>
+                Failed in 10th or 12th grade exams? Don't lose hope! We help you pass your exams 
+                through NIOS (National Institute of Open Schooling) and secure admission to your 
+                favorite college. Your dream can come true:
+              </p>
+              <ul className="service-list">
+                <li>Central Government approved NIOS BOARD exam registration</li>
+                <li>Form filling assistance for HSC/SSC exams</li>
+                <li>Exams available in Gujarati and English</li>
+                <li>Admission support to your preferred college</li>
+                <li>Associated with 132 colleges in Gujarat</li>
+                <li>Save your academic year and build a bright career</li>
+              </ul>
+              <Link href="/contact" className="btn btn-primary">Get Started</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="destinations-section section">
         <div className="container">
           <h2 className="section-title">Study Destinations</h2>

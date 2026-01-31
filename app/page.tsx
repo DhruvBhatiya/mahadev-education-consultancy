@@ -57,6 +57,11 @@ export default function Home() {
               <h3>Visitor Visa</h3>
               <p>Seamless visitor visa assistance for travel and tourism</p>
             </div>
+            <div className="service-card">
+              <div className="service-icon">📚</div>
+              <h3>NIOS - HSC/SSC</h3>
+              <p>Pass your 10th and 12th grade exams through NIOS and secure admission to your favorite college</p>
+            </div>
           </div>
         </div>
       </section>

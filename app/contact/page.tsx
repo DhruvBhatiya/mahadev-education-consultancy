@@ -93,6 +93,7 @@ export default function Contact() {
                   <p>Office: 76000 92449</p>
                   <p>Office: 70414 15851</p>
                   <p>Dhruval Brahmbhatt: 8490892700</p>
+                  <p>Gunjan Brahmbhatt: 9898968745</p>
                 </div>
 
                 <div className="info-card">

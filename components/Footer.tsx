@@ -35,7 +35,7 @@ export default function Footer() {
             <p>Office: 76000 92449 | 70414 15851</p>
             <p>Dhruval Brahmbhatt: 8490892700</p>
             <p>Gunjan Brahmbhatt: 9898968745</p>
-            <p><strong>Address 1:</strong> B-109, Joyos Hubtown, Modhera Circle</p>
+            <p><strong>Address 1:</strong> B-109, Joyos Hubtown, Modhera Circle, Mehsana - 384001</p>
             <p><strong>Address 2:</strong> 810, Satyamev Eminence, B/S. Saptak Bungalows, Science City Road, Sola, Ahmedabad - 380060</p>
           </div>
         </div>

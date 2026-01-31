@@ -53,6 +53,12 @@
   margin-bottom: 40px;
 }
 
+.address-cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
 .info-card {
   background: var(--light-gray);
   padding: 30px;
@@ -312,6 +318,10 @@
   .info-card {
     flex: 1;
     min-width: 250px;
+  }
+
+  .address-cards-wrapper {
+    grid-template-columns: 1fr;
   }
 }
 

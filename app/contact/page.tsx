@@ -96,11 +96,23 @@ export default function Contact() {
                   <p>Gunjan Brahmbhatt: 9898968745</p>
                 </div>
 
-                <div className="info-card">
-                  <div className="info-icon">📍</div>
-                  <h3>Address</h3>
-                  <p>B-109, Joyos Hubtown</p>
-                  <p>Modhera Circle</p>
+                <div className="address-cards-wrapper">
+                  <div className="info-card">
+                    <div className="info-icon">📍</div>
+                    <h3>Address 1</h3>
+                    <p>B-109, Joyos Hubtown,</p>
+                    <p>Modhera Circle,</p>
+                    <p>Mehsana - 384001</p>
+                  </div>
+
+                  <div className="info-card">
+                    <div className="info-icon">📍</div>
+                    <h3>Address 2</h3>
+                    <p>810, Satyamev Eminence</p>
+                    <p>B/S. Saptak Bungalows</p>
+                    <p>Science City Road, Sola</p>
+                    <p>Ahmedabad - 380060</p>
+                  </div>
                 </div>
 
                 <div className="info-card">
@@ -227,6 +239,7 @@ export default function Contact() {
             <div className="map-content">
               <div className="map-icon">📍</div>
               <h3>B-109, Joyos Hubtown, Modhera Circle</h3>
+              <p>810, Satyamev Eminence, B/S. Saptak Bungalows, Science City Road, Sola, Ahmedabad - 380060</p>
               <p>For more information, visit our office</p>
             </div>
           </div>
